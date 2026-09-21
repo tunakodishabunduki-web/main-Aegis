@@ -1,3 +1,34 @@
+# Aegis --- Multi-Site Honeypot & Attack Intelligence Platform
+
+> **Animated GitHub-compatible project README package**
+>
+> GitHub's `README.md` renderer does not execute arbitrary JavaScript or
+> CSS animations. Therefore, the original animated landing page is
+> preserved as `docs/index.html`. Open that file through GitHub Pages
+> (or another static host) to see the animations, while this `README.md`
+> remains compatible with GitHub's Markdown renderer.
+
+## Project
+
+The complete original animated page is preserved below and should be
+saved as:
+
+`docs/index.html`
+
+### Enable the animated page with GitHub Pages
+
+1.  Put the accompanying `docs/index.html` file in the repository.
+2.  In **Settings → Pages**, select the `main` branch and `/docs`
+    folder.
+3.  Open the generated GitHub Pages URL to view the original animated
+    Aegis landing page.
+
+## Original animated page
+
+The following is the complete original HTML source from the uploaded
+file.
+
+``` html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -834,3 +865,14 @@ document.querySelectorAll('.stat-val').forEach(el => {
 </script>
 </body>
 </html>
+```
+
+## Important
+
+GitHub README pages intentionally restrict active JavaScript execution.
+The animations from the original page cannot run directly inside the
+rendered `README.md`. The correct way to preserve those animations is to
+host the original HTML as a GitHub Pages site.
+
+The source above is preserved without removing the original project
+content.
