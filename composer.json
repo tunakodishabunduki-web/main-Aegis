@@ -1,0 +1,20 @@
+{
+  "name": "aegis/honeypot",
+  "description": "Aegis Multi-Site Honeypot and Attack Intelligence Platform — PHP OOP, integrates with SIMAP",
+  "type": "library",
+  "require": {
+    "php": ">=8.0",
+    "fpdf/fpdf": "^1.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Aegis\\Config\\":   "config/",
+      "Aegis\\Classes\\":  "classes/",
+      "Aegis\\Honeypot\\": "honeypot/",
+      "Aegis\\Bridge\\":   "bridge/"
+    }
+  },
+  "scripts": {
+    "setup-db": "php -r \"require 'config/Database.php'; $sql = file_get_contents('sql/schema.sql'); /* run via MySQL CLI *//\""
+  }
+}
